@@ -12,13 +12,15 @@ class LoginScreen extends StatelessWidget {
         child: Center(
         child: Column (
           children:[
-             const SizedBox(height: 100),
+             const SizedBox(height: 140),
 
             //logo
                const Icon(
-                Icons.favorite,
-                size: 80,
-                color: Color(0xFFCDCDC3), 
+                Icons.favorite_border_sharp,
+                size: 100,
+                color: Color(0xFFD9A066), 
+    
+                
               ),
 
               const SizedBox(height: 50),
@@ -29,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFFCDCDC3),
                   fontSize: 25,
-                  height: 1,
+                  height: 2,
                   
 
 
@@ -37,17 +39,39 @@ class LoginScreen extends StatelessWidget {
                 ),
                 ),
 
-             const
-            //username
+             Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Color(0xFF218A21),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(60),
+                    topRight: Radius.circular(60),
+                    bottomLeft: Radius.circular(60),
+                    bottomRight: Radius.circular(60),
+                    
+                    
+                    
+                  ),
+                  
+
+                ),
+                //username
             
-              Column(
+              child:Padding (
+                padding: EdgeInsets.all(.0),
+                child: Column(
                 children: [
                   SizedBox(height: 65),
                   MyTextfield(),
+                  MyTextfield2(),
                 ],
-              ),
+              
               //password
-              MyTextfield()
+              
+              ),
+              ),
+             )
+             )
               //forgot
 
               //sign
