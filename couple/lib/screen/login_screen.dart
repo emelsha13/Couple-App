@@ -11,11 +11,11 @@ class LoginScreen extends StatelessWidget {
         child: Center(
         child: Column (
           children:const [
-             SizedBox(height: 240),
+             SizedBox(height: 100),
 
             //logo
                Icon(
-                Icons.lock_outline,
+                Icons.favorite,
                 size: 80,
                 color: Color(0xFFCDCDC3), 
               ),
