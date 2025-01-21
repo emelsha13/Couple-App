@@ -10,24 +10,24 @@ class LoginScreen extends StatelessWidget {
       body: SafeArea (
         child: Center(
         child: Column (
-          children:const [
-             SizedBox(height: 100),
+          children:[
+             const SizedBox(height: 100),
 
             //logo
-               Icon(
+               const Icon(
                 Icons.favorite,
                 size: 80,
                 color: Color(0xFFCDCDC3), 
               ),
 
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
 
             //welcome back
-              Text(
+              const Text(
                 "Hi Dear!",
                 style: TextStyle(
                   color: Color(0xFFCDCDC3),
-                  fontSize: 30,
+                  fontSize: 25,
                   height: 1,
                   
 
@@ -36,20 +36,46 @@ class LoginScreen extends StatelessWidget {
                 ),
                 ),
             //username
+              Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: TextField(
+                  
+                  decoration: InputDecoration(
+                    
+                    enabledBorder:  OutlineInputBorder(
+                      borderSide: BorderSide(color: Color.fromARGB(255, 255, 255, 255),
+                      
+                    ),
+                     borderRadius: BorderRadius.circular(30),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Color.fromARGB(255, 67, 67, 66),
+                  ),
+                  borderRadius: BorderRadius.circular(30),
+                  ),
+                  fillColor: const Color(0xFFffffff),
+                  filled: true,
+                  
 
-            //password
+                ),
+              //password
+                
+              //forgot
 
-            //forgot
+              //sign
 
-            //sign
+              //or continue with
 
-            //or continue with
+              //google apple sign
 
-            //google apple sign
-
-            //not a member? go register
-
+              //not a member? go register
+                  )
+                ),
+              
+              
             ]
+            
+            
         )
       )
       )
