@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//USERNAME
 class MyTextfield extends StatelessWidget {
   const MyTextfield({super.key});
 
@@ -13,8 +13,8 @@ class MyTextfield extends StatelessWidget {
                     hintText: AutofillHints.username,
                     hintStyle: TextStyle(
                       color: Colors.black,
-                      fontSize: 20,
-                      
+                      fontSize: 21,
+                     
 
                     ),
                      
@@ -33,7 +33,7 @@ class MyTextfield extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(30),
                   ),
-                  fillColor: const Color(0xFFD9A066),
+                  fillColor: Colors.white,
                   filled: true,
                   
 
@@ -41,7 +41,7 @@ class MyTextfield extends StatelessWidget {
                 ),);
                 }
                 }
-
+//PASSWORD
 
   class MyTextfield2 extends StatelessWidget {
   const MyTextfield2({super.key});
@@ -75,7 +75,7 @@ class MyTextfield extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(30),
                   ),
-                  fillColor: const Color(0xFFD9A066),
+                  fillColor: Colors.white,
                   filled: true,
                   
 
@@ -83,3 +83,4 @@ class MyTextfield extends StatelessWidget {
                 ),);
                 }
                 }
+

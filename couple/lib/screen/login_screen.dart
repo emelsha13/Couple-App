@@ -1,5 +1,7 @@
 import 'package:couple/components/my_textfield.dart';
+import 'package:couple/screen/homescreen.dart';
 import 'package:flutter/material.dart';
+import 'forgetpassword.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -16,9 +18,9 @@ class LoginScreen extends StatelessWidget {
 
             //logo
                const Icon(
-                Icons.favorite_border_sharp,
-                size: 100,
-                color: Color(0xFFD9A066), 
+                Icons.lock,
+                size: 80,
+                color: Colors.white, 
     
                 
               ),
@@ -29,7 +31,7 @@ class LoginScreen extends StatelessWidget {
               const Text(
                 "Hi Dear!",
                 style: TextStyle(
-                  color: Color(0xFFCDCDC3),
+                  color: Colors.white,
                   fontSize: 25,
                   height: 2,
                   
@@ -56,6 +58,7 @@ class LoginScreen extends StatelessWidget {
 
                 ),
                 //username
+                //password
             
               child:Padding (
                 padding: EdgeInsets.all(.0),
@@ -64,16 +67,51 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(height: 65),
                   MyTextfield(),
                   MyTextfield2(),
-                ],
-              
-              //password
-              
-              ),
-              ),
-             )
-             )
-              //forgot
+                  
 
+                  TextButton(
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                         MaterialPageRoute(builder: (context) => Forgetpassword()),
+                         );
+                    },
+                    child:  Text(
+                  'forgot password?',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17,
+                    decoration: TextDecoration.underline,)
+                  
+                  
+                  
+                  
+                  
+                    )),
+                  
+                ],
+              // ElevatedButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => Homescreen()),
+              //     );
+              //   },
+              //   child: Text('Login'),
+              // )
+                
+              
+              ),
+              
+              ),
+              
+             )
+             ),
+              //forgot
+                
+                  
+
+                
               //sign
 
               //or continue with
